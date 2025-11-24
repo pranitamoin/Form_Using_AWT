@@ -1,0 +1,8 @@
+package awtcomponent1;
+
+class MainForm {
+
+    public static void main(String[] args) {
+        new UserRegistrationForm(); 
+    }
+}
