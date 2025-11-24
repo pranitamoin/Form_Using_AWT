@@ -1,0 +1,17 @@
+package awtcomponent1;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+
+public class DatabaseConnector {
+
+    public static Connection DbConnection() throws Exception {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/Registrationformuser","root","Pranita");
+        return con;
+    }
+    
+
+	
+}
